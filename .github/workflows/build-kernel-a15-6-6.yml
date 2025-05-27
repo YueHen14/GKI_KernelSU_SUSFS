@@ -28,8 +28,9 @@ on:
         default: Dev(开发)
       version:
         description: '自定义版本名(如位于6.6.77-android15-8<自定义版本名>/留空则使用默认版本号)'
-        required: false
+        required: true
         type: string
+        default: "sakura"
       use_zram:
         description: '是否开启增加更多ZRAM算法?'
         required: true
@@ -37,9 +38,9 @@ on:
         default: true
       use_kpm:
         description: '是否开启KPM功能?'
-        required: false
+        required: true
         type: boolean
-        default: false
+        default: true
       supp_op:
         description: '是否开启一加8E处理器机型支持?(非该机型无须勾)'
         required: false
